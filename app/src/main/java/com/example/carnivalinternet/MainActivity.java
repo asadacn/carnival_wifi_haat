@@ -38,6 +38,12 @@ public class MainActivity extends AppCompatActivity {
                 openNagordolaActivity();
             }
         });
+
+        Button  update_button = (Button) findViewById(R.id.check_Update);
+        update_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {openCheckUpdateActivity();}
+        });
     }
     public void openHaatActivity(){
         Intent intent = new Intent(this, HaatActivity.class);
@@ -51,6 +57,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void openNagordolaActivity(){
         Intent intent = new Intent(this, NagordolaActivity.class);
+        startActivity(intent);
+    }
+
+    public void openCheckUpdateActivity(){
+        Intent intent = new Intent(this, CheckUpdateActivity.class);
         startActivity(intent);
     }
 }
