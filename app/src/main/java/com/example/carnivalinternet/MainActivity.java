@@ -3,6 +3,7 @@ package com.example.carnivalinternet;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -61,7 +62,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openCheckUpdateActivity(){
-        Intent intent = new Intent(this, CheckUpdateActivity.class);
-        startActivity(intent);
+//        Intent intent = new Intent(this, CheckUpdateActivity.class);
+//        startActivity(intent);
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://app.box.com/s/w2xecul7abgo4uh76bz88buqu9mb8k0p"));
+        startActivity(browserIntent);
     }
 }
