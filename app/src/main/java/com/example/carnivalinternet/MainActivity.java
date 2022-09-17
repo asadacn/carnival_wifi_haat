@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
     public void openCheckUpdateActivity(){
 //        Intent intent = new Intent(this, CheckUpdateActivity.class);
 //        startActivity(intent);
-        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://app.box.com/s/w2xecul7abgo4uh76bz88buqu9mb8k0p"));
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://drive.google.com/drive/folders/1psC8ZE1rm8KhzkxSOeWiwoyhYLvRSno-?usp=sharing"));
         startActivity(browserIntent);
     }
 }
